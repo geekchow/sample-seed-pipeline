@@ -1,7 +1,7 @@
 node('master') {
     step([
           $class: 'ExecuteDslScripts',
-          targets: 'PipelineFactory',
+          targets: 'Seed-Pipeline.groovy',
           lookupStrategy: 'SEED_JOB'
     ])
 }
