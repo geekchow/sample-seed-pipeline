@@ -1,4 +1,7 @@
 node('master') {
+    
+    checkout(scm)
+    
     step([
           $class: 'ExecuteDslScripts',
           targets: 'Seed-Pipeline.groovy',
