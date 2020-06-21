@@ -1,0 +1,7 @@
+node('master') {
+    step([
+          $class: 'ExecuteDslScripts',
+          targets: 'PipelineFactory',
+          lookupStrategy: 'SEED_JOB'
+    ])
+}
